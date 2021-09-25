@@ -151,6 +151,113 @@ Urutan ke 8 : Coklat NC (tidak dipakai)
 **Kendala yang dialami** :
 Tidak ada. 
 
+## Soal 6
+```
+Cari username dan password ketika melakukan login ke FTP Server
+```
+
+**Filter : ftp.request.command == USER || ftp.request.command == PASS**
+**Cara pengerjaan :**
+1. Gunakan filter
+2. Kemudian follow tcp stream paket yang ada 
+
+
+Screenshot:
+![image](https://user-images.githubusercontent.com/90212308/134769441-23facb32-c505-40bb-a8d1-a316eb990db6.png)
+![image](https://user-images.githubusercontent.com/90212308/134769468-b1cebc74-9a07-450b-af0b-33bcbba29d52.png)
+
+**Kendala :**
+Tidak ada.
+
+## Soal 7
+```
+Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+```
+
+**Filter : frame contains Real.pdf**
+**Cara pengerjaan :**
+1. Gunakan filter
+2. Kemudian follow tcp stream paket yang ada 
+3. Pilih RAW pada ```show data as```
+4. Pilih Save as dan save dengan exstensi pdf
+
+
+Screenshot:
+![image](https://user-images.githubusercontent.com/90212308/134769498-ed70feb6-31ef-4b1e-89ec-cabd6eb62f00.png)
+![image](https://user-images.githubusercontent.com/90212308/134769535-307e2278-185a-47b8-83cc-14f971c83c52.png)
+![image](https://user-images.githubusercontent.com/90212308/134769555-cd4c91f1-27cd-4e7c-9344-7099a6a7a9d3.png)
+
+**Kendala :**
+Tidak ada.
+
+## Soal 8
+```
+Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+```
+
+**Filter : ftp.request.command == RETR**
+***ralat STOR***
+**Cara pengerjaan :**
+1. Gunakan filter
+2. Paket akan terdisplay
+
+Screenshot :
+![image](https://user-images.githubusercontent.com/90212308/134769654-378501df-63f2-491e-9aa0-0068cb0a9731.png)
+![image](https://user-images.githubusercontent.com/90212308/134769674-3c0e8416-db69-4554-93f2-d2f5c5887906.png)
+
+**Kendala :**
+Hasil filter tidak ada, ralat.
+
+## Soal 9
+```
+Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
+
+```
+
+**Filter : ftp-data.command contains "secret.zip"**
+**Cara pengerjaan :**
+1. Gunakan filter
+2. Kemudian follow tcp stream paket yang ada 
+3. Pilih RAW pada ```show data as```
+4. Pilih Save as dan save dengan exstensi zip
+
+
+Screenshot :
+![image](https://user-images.githubusercontent.com/90212308/134769749-4be9167c-1809-4779-af18-a3267db2635d.png)
+![image](https://user-images.githubusercontent.com/90212308/134769762-97955293-b70b-4a17-b834-fb77a1d194dd.png)
+![image](https://user-images.githubusercontent.com/90212308/134769768-a12041cc-fb1f-45fe-8d9f-fdda4ea3b6ef.png)
+
+**Kendala :**
+Terkendala ketika mendownload file secret zip.
+
+## Soal 10
+```
+Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
+```
+
+**Filter : ftp-data.command contains "history.txt"**
+**Cara pengerjaan :**
+1. Gunakan filter
+2. Kemudian follow tcp stream paket yang ada 
+3. Pada stream tersebut terdapat hint berupa ```bukanapaapa.txt```
+4. Filter dengan format yang sama namun rubah ```history.txt``` menjadi ```bukanapaapa.txt```
+
+Screenshot :
+![image](https://user-images.githubusercontent.com/90212308/134769809-85768113-7db2-4264-8004-f4957edf66d4.png)
+![image](https://user-images.githubusercontent.com/90212308/134769811-dba08646-c29f-4c59-90cc-6eae2c36aed3.png)
+
+**Filter : ftp-data.command contains "bukanapaapa.txt"**
+1. Gunakan filter
+2. Kemudian follow tcp stream paket yang ada
+3. Pada Stream tersebut terdapat password untuk membuka zip pada nomor 9
+
+
+Screenshot : 
+![image](https://user-images.githubusercontent.com/90212308/134769886-3235c42e-d899-4071-836f-f6c8f421ad80.png)
+![image](https://user-images.githubusercontent.com/90212308/134769901-0b24107a-d21b-4f84-b0f8-274b3916720f.png)
+
+**Kendala :**
+Terkendala ketika mencari hint untuk membuka file nomor 9.
 
 ## Soal 11
 
