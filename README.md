@@ -157,6 +157,7 @@ Cari username dan password ketika melakukan login ke FTP Server
 ```
 
 **Filter : ftp.request.command == USER || ftp.request.command == PASS**
+
 **Cara pengerjaan :**
 1. Gunakan filter
 2. Kemudian follow tcp stream paket yang ada 
@@ -176,6 +177,7 @@ Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..
 ```
 
 **Filter : frame contains Real.pdf**
+
 **Cara pengerjaan :**
 1. Gunakan filter
 2. Kemudian follow tcp stream paket yang ada 
@@ -197,6 +199,7 @@ Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 ```
 
 **Filter : ftp.request.command == RETR**
+
 ***ralat STOR***
 **Cara pengerjaan :**
 1. Gunakan filter
@@ -217,6 +220,7 @@ Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Sa
 ```
 
 **Filter : ftp-data.command contains "secret.zip"**
+
 **Cara pengerjaan :**
 1. Gunakan filter
 2. Kemudian follow tcp stream paket yang ada 
@@ -239,6 +243,7 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 ```
 
 **Filter : ftp-data.command contains "history.txt"**
+
 **Cara pengerjaan :**
 1. Gunakan filter
 2. Kemudian follow tcp stream paket yang ada 
