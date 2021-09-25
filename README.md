@@ -2,7 +2,7 @@
 
 ### Anggota Kelompok
 1. Gerald Elroy Van Ryan 05111940000187
-2. Gian Ega              05111940000204
+2. Gian Ega              05111940000214
 3. Riza Dwi Andhika      05111940000149
 
 ## Soal 1
