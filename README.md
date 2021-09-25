@@ -188,7 +188,8 @@ Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..
 Screenshot:
 ![image](https://user-images.githubusercontent.com/90212308/134769498-ed70feb6-31ef-4b1e-89ec-cabd6eb62f00.png)
 ![image](https://user-images.githubusercontent.com/90212308/134769535-307e2278-185a-47b8-83cc-14f971c83c52.png)
-![image](https://user-images.githubusercontent.com/90212308/134769555-cd4c91f1-27cd-4e7c-9344-7099a6a7a9d3.png)
+![image](https://user-images.githubusercontent.com/90212308/134770499-8ec9b999-997f-46f3-be17-bfd7f5184d87.png)
+
 
 **Kendala :**
 Tidak ada.
