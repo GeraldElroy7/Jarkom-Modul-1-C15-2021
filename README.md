@@ -163,6 +163,7 @@ Cari username dan password ketika melakukan login ke FTP Server
 
 
 Screenshot:
+
 ![image](https://user-images.githubusercontent.com/90212308/134769441-23facb32-c505-40bb-a8d1-a316eb990db6.png)
 ![image](https://user-images.githubusercontent.com/90212308/134769468-b1cebc74-9a07-450b-af0b-33bcbba29d52.png)
 
@@ -202,6 +203,7 @@ Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 2. Paket akan terdisplay
 
 Screenshot :
+
 ![image](https://user-images.githubusercontent.com/90212308/134769654-378501df-63f2-491e-9aa0-0068cb0a9731.png)
 ![image](https://user-images.githubusercontent.com/90212308/134769674-3c0e8416-db69-4554-93f2-d2f5c5887906.png)
 
@@ -223,6 +225,7 @@ Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Sa
 
 
 Screenshot :
+
 ![image](https://user-images.githubusercontent.com/90212308/134769749-4be9167c-1809-4779-af18-a3267db2635d.png)
 ![image](https://user-images.githubusercontent.com/90212308/134769762-97955293-b70b-4a17-b834-fb77a1d194dd.png)
 ![image](https://user-images.githubusercontent.com/90212308/134769768-a12041cc-fb1f-45fe-8d9f-fdda4ea3b6ef.png)
@@ -243,6 +246,7 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 4. Filter dengan format yang sama namun rubah ```history.txt``` menjadi ```bukanapaapa.txt```
 
 Screenshot :
+
 ![image](https://user-images.githubusercontent.com/90212308/134769809-85768113-7db2-4264-8004-f4957edf66d4.png)
 ![image](https://user-images.githubusercontent.com/90212308/134769811-dba08646-c29f-4c59-90cc-6eae2c36aed3.png)
 
